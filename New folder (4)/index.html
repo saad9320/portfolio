@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio · Mushtaq Ahmad Saad</title>
+  <meta name="description" content="Creative developer portfolio showcasing projects, skills, and experience.">
+  <meta name="theme-color" content="#0f1020">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="bg">
+    <div class="blob blob-1 morph"></div>
+    <div class="blob blob-2 morph"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+  </div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Go to home">SAAD<span>.</span></a>
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+      <span class="icon-sun" aria-hidden="true">☀️</span>
+      <span class="icon-moon" aria-hidden="true">🌙</span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Intro">
+      <div class="hero-inner">
+        <div class="avatar reveal">
+          <div class="avatar-ring"></div>
+          <img id="avatarImg" alt="Your portrait" src="WhatsApp Image 2025-09-15 at 19.27.42_bf18419d.jpg"/>
+        </div>
+        <p class="eyebrow reveal">Full-Stack Innovator</p>
+        <h1 class="headline reveal">
+          Building delightful experiences
+          <span class="gradient-text">on the web</span>
+        </h1>
+        <p class="subhead reveal">
+          I build dynamic, scalable web applications with Django and PHP, focusing on clean code, seamless performance, and user-friendly design.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+        <div class="stats reveal">
+          <div><span class="num">2+</span><span class="label">Years</span></div>
+          <div><span class="num">9+</span><span class="label">Projects</span></div>
+          <div><span class="num">10x</span><span class="label">Impact</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbit">
+          <div class="planet"></div>
+          <div class="satellite s1"></div>
+          <div class="satellite s2"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About</h2>
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <h3>Who I am</h3>
+            <p>
+              Assalamu Alaikum, I’m Mushtaq Ahmad Saad, a passionate Full-Stack Web Developer with expertise in Django (Python) and PHP. I specialize in building dynamic, secure, and user-friendly web applications by combining strong backend logic with modern, responsive frontends.
+            </p>
+          </div>
+          <div class="about-card glass reveal">
+            <h3>What I do</h3>
+            <p>
+              full-stack web developer specializing in Django and PHP. I create secure, scalable, and user-friendly web applications. From backend logic and database design to responsive frontends, I deliver complete solutions including ERPs, dashboards, and custom systems tailored to business needs with clean, efficient code.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <h3>Frontend</h3>
+            <ul class="meters">
+              <li><span>HTML</span><div class="bar" data-level="95"></div></li>
+              <li><span>CSS / Animations</span><div class="bar" data-level="92"></div></li>
+              <li><span>JavaScript</span><div class="bar" data-level="90"></div></li>
+              <li><span>Bootstrap</span><div class="bar" data-level="88"></div></li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <h3>Backend</h3>
+            <ul class="meters">
+              <li><span>Django</span><div class="bar" data-level="80"></div></li>
+              <li><span>PHP</span><div class="bar" data-level="84"></div></li>
+              <li><span>MySQL</span><div class="bar" data-level="78"></div></li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <h3>Design</h3>
+            <ul class="meters">
+              <li><span>UX/UI</span><div class="bar" data-level="86"></div></li>
+              <li><span>Design Systems</span><div class="bar" data-level="90"></div></li>
+              <li><span>Accessibility</span><div class="bar" data-level="88"></div></li>
+            </ul>
+          </article>
+        </div>
+        <div class="tools-row reveal" aria-label="Tools">
+          <span class="tool">TypeScript</span>
+          <span class="tool">Vite</span>
+          <span class="tool">Git</span>
+          <span class="tool">Figma</span>
+          <span class="tool">Tailwind</span>
+          <!-- <span class="tool">GSAP</span> -->
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="project-filters reveal" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="django" role="tab">Django</button>
+          <button class="filter-btn" data-filter="php" role="tab">PHP</button>
+          <button class="filter-btn" data-filter="system" role="tab">Design System</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- <article class="project-card tilt reveal shine" data-cat="django php" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="projectModal" data-project='{"title":"Analytics Dashboard","desc":"Real‑time charts, theming, and offline support.","images":["g","g2"]}'>
+            <div class="thumb" role="img" aria-label="Dashboard UI">
+              <img alt="Dashboard UI" loading="lazy" src="assets/projects/analytics.jpg"/>
+            </div>
+            <div class="content">
+              <h3>Analytics Dashboard</h3>
+              <p>Real‑time charts, theming, and offline support. Built for performance.</p>
+              <div class="tags"><span>Django</span><span>D3</span><span>PWA</span></div>
+              <button class="btn ghost open-project" type="button">View details</button>
+            </div>
+          </article> -->
+          <article class="project-card tilt reveal shine" data-cat="php" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="projectModal" data-project='{"title":"Immersive Landing","desc":"Micro‑interactions and motion system.","images":["g2","g3"]}'>
+            <div class="thumb" role="img" aria-label="3D landing">
+              <img alt="3D landing" loading="lazy" src="bl.png"/>
+            </div>
+            <div class="content">
+              <h3>Blood Bank Management System</h3>
+              <p>Micro‑interactions and motion system with reduced‑motion support.</p>
+              <div class="tags"><span>PHP</span><span>JavaScript</span><span>MySQL</span> <span>Bootstrap</span> <span>HTML</span> <span>CSS</span></div>
+              <button class="btn ghost open-project" type="button">View details</button>
+            </div>
+          </article>
+          <article class="project-card tilt reveal shine" data-cat="system django" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="projectModal" data-project='{"title":"Design System","desc":"Reusable components, tokens, and docs.","images":["g3","g"]}'>
+            <div class="thumb" role="img" aria-label="Design System">
+              <img alt="Design system" loading="lazy" src="hall.png"/>
+            </div>
+            <div class="content">
+              <h3>Store Expense Management System</h3>
+              <p>Full-Stack Store Expense Management System</p>
+              <div class="tags"><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span> <span>MySQL</span> <span>Bootstrap</span></div>
+              <button class="btn ghost open-project" type="button">View details</button>
+            </div>
+          </article>
+          <article class="project-card tilt reveal shine more" data-cat="django" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="projectModal" data-project='{"title":"E‑commerce UI","desc":"Checkout flows and state machines.","images":["g","g3"]}'>
+            <div class="thumb" role="img" aria-label="E‑commerce UI">
+              <img alt="E‑commerce UI" loading="lazy" src="ee.png"/>
+            </div>
+            <div class="content">
+              <h3>E‑commerce Website</h3>
+              <p>Full-Stack E-commerce Website</p>
+              <div class="tags"><span>Django</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <button class="btn ghost open-project" type="button">View details</button>
+            </div>
+          </article>
+          <article class="project-card tilt reveal shine more" data-cat="php" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="projectModal" data-project='{"title":"Portfolio Motion","desc":"Motion system with reduced-motion.","images":["g2","g"]}'>
+            <div class="thumb" role="img" aria-label="Portfolio Motion">
+              <img alt="Portfolio Motion" loading="lazy" src="pf.png"/>
+            </div>
+            <div class="content">
+              <h3>Portfolio</h3>
+              <p>Static Portfolio Website</p>
+              <div class="tags"><span>Html</span><span>CSS</span> <span>JavaScript</span></div>
+              <button class="btn ghost open-project" type="button">View details</button>
+            </div>
+          </article>
+        </div>
+        <div class="projects-actions reveal">
+          <button class="btn ghost" id="showMore" type="button">Show more</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience & Education</h2>
+        <ol class="timeline reveal">
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>Full-Stack Web Developer</h3>
+              <p>Marketplace.</p>
+              <span class="meta">Present</span>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>Django (Python)</h3>
+              <p>Coding for All.</p>
+              <span class="meta">2024 — Present</span>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>PHP</h3>
+              <p>Apna College.</p>
+              <span class="meta">2024 — Present</span>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>Diploma in Computer Science</h3>
+              <p>Mangeove Institute of Science and Technology.</p>
+              <span class="meta">2023 — Present</span>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>Web design course</h3>
+              <p>Hablu Programmer.</p>
+              <span class="meta">2021 — 2023</span>
+            </div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="desc">
+              <h3>S.S.C.</h3>
+              <p>Jossore Board</p>
+              <span class="meta">2023</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Testimonials</h2>
+        <div class="carousel glass reveal" role="region" aria-roledescription="carousel" aria-label="Client testimonials">
+          <button class="carousel-btn prev" aria-label="Previous testimonial">‹</button>
+          <div class="carousel-track" tabindex="0">
+            <figure class="slide">
+              <blockquote>“They built our platform with precision. The experience became smoother, and our clients loved the results.”</blockquote>
+              <figcaption>— Sujoy, Mangrove Institute of Science and Technology</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“Elegant, accessible, and fast. Exactly what we needed.”</blockquote>
+              <figcaption>— Leo, Founder at Startup XYZ</figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>“A rare blend of design taste and engineering rigor.”</blockquote>
+              <figcaption>— Priya, Design Manager</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="contact-card glass reveal">
+          <p>Have a project in mind or just want to say hi?</p>
+          <div class="cta-row" style="margin-bottom:1rem;">
+            <button class="btn ghost" id="copyEmail" type="button" data-email="saadbagerhat@gmail.com">Copy email</button>
+            <a class="btn ghost" href="https://www.linkedin.com/in/mushtaqahmadsaad/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/saad9320" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn ghost" href="https://www.facebook.com/mushtaqahmadsaad" target="_blank" rel="noreferrer">Facebook</a>
+            <a class="btn ghost" href="https://www.instagram.com/ahmadsaad2007" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <label>
+                <span>Name</span>
+                <input name="name" type="text" autocomplete="name" required>
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" required>
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send message</button>
+              <span class="form-status" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mushtaq Ahmad Saad. Built with care.</p>
+    </div>
+  </footer>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-bg"></div>
+    <div class="intro-inner">
+      <div class="intro-line intro-welcome" aria-hidden="true">WELCOME</div>
+      <div class="intro-line intro-hey" aria-hidden="true">As-salamu Alaykum</div>
+      <div class="intro-line intro-name">I’m <span class="gradient-text">Mushtaq Ahmad Saad</span></div>
+      <div class="intro-line intro-role">Full-Stack Web Developer</div>
+      <button class="btn ghost intro-skip" id="introSkip" type="button" aria-label="Skip">Skip</button>
+    </div>
+  </div>
+</body>
+</html>
